@@ -1,9 +1,10 @@
 $primary:rgb(0, 174, 255);
 $secondary:rgb(123, 0, 255);
-$bg-color : rgba(0, 0, 0, 0.689);
+$bg-color : rgb(58, 58, 58);
 
 body{
     font-family: "Titan One", sans-serif;
+    background-color: $bg-color;
 }
 
 
@@ -12,7 +13,24 @@ header{
     position : fixed;
     width : 100%;
     box-shadow : 0px 0px 10px 6px $secondary;
+    top : 0;
     .navbar{
-        background-color : $bg-color !important;
+        background-color : rgba(0, 0, 0, 0) !important;
+    }
+}
+
+main{
+    margin-top: 70px;
+    .hero{
+        display: flex;
+        justify-content : space-between;
+        .left{
+            .hello{
+                font-size : 2em;
+            }
+            .quote{
+                font-size: 2em;
+            }
+        }
     }
 }
